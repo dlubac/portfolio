@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'NationalPark';
+    src: url("fonts/NationalPark-Thin.otf");
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NationalPark';
+    color: #252525;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 1.75em;
+    float: left;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header .icon {
+    float: right;
+    padding: 12.5px 0 0 15px;
+
+}
+
+h2 {
+    max-width: 80%;
+    height: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+}
+
+h2 a {
+    float: left;
+    padding-top: 3px;
+}
+
+/* Homepage */
+.home-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 840px;
+    margin: 0 auto;
+    border-top: 1px solid #4a4a4a;
+
+}
+
+.home-flex-container .grid-image {
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 15px;
+}
+
+.home-flex-container .grid-image div {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.home-flex-container .grid-image img {
+    transition: 0.15s ease-in;
+}
+
+.home-flex-container .grid-image img:hover {
+    opacity: 0.5;
+    z-index: 2;
+}
+
+/* Gallery Page */
+.gallery-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #4a4a4a;
+}
+
+.gallery-flex-container img {
+    max-height: 750px;
+    max-width: 100%;
+    margin: 15px;
+}
+
+.gallery-flex-container img:hover{
+    cursor: crosshair;
+}

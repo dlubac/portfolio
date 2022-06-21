@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Matt Dlubac Photography</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src='../../intense.min.js'></script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Matt Dlubac</a></h1>
+            <a href="mailto:matt@dlubac.com"><img src="../../icons/mail.svg" alt="Mail icon" class="icon" height="25px" width="25px"></a>
+            <a href="https://instagram.com/dlubac"><img src="../../icons/instagram.svg" alt="instagram icon" class="icon" height="25px" width="25px"></a>
+        </header>
+
+        <h2><a href="/"><img src="../../icons/arrow-left.svg" height="25px" width="25px"></a>Rocky Mountain National Park 2019</h2>
+        <div class="gallery-flex-container">
+            <img class="intense" src="_7R32115_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32128_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32134_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32164_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32256_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32300_WEB.jpg" alt="" />
+            <img class="intense" src="_7R32306_WEB.jpg" alt="" />
+        </div>
+        <script>
+            window.onload = function() {
+                var elements = document.querySelectorAll( 'img' );
+                console.log(elements);
+                Intense( elements );
+            }
+         </script>
+    </body>
+
+</html>
