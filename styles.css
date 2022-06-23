@@ -90,7 +90,7 @@ h2 a {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    max-width: 80%;
+    max-width: min(80%, 1200px);
     margin: 0 auto;
     border-top: 1px solid #4a4a4a;
 }
