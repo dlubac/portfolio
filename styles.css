@@ -11,6 +11,10 @@
     color: #252525;
 }
 
+body {
+    min-width: 720px;
+}
+
 header {
     position: -webkit-sticky;
     position: sticky;
