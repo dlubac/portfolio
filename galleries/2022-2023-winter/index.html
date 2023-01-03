@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Matt Dlubac Photography</title>
+    <meta name="description" content="Gallery of photographs taken during the 2022 - 2023 winter." />
+    <link rel="canonical" href="https://dlubac.com/galleries/2022-2023-winter/" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" href="https://dlubac.com/icons/favicon.ico" />
+    <script src="../../intense.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="/">Matt Dlubac</a></h1>
+      <a href="mailto:matt@dlubac.com"
+        ><img src="../../icons/mail.svg" alt="Mail icon" class="icon" height="25px" width="25px"
+      /></a>
+      <a href="https://instagram.com/dlubac"
+        ><img src="../../icons/instagram.svg" alt="instagram icon" class="icon" height="25px" width="25px"
+      /></a>
+    </header>
+
+    <h2>
+      <a href="/"><img src="../../icons/arrow-left.svg" alt="Left arrow icon" height="25px" width="25px" /></a>Winter
+      2022 - 2023
+    </h2>
+    <div class="gallery-flex-container">
+      <img class="intense" src="winter_22_23_01.jpg" data-image="winter_22_23_01_large.jpg" alt="" />
+      <img class="intense" src="winter_22_23_02.jpg" data-image="winter_22_23_02_large.jpg" alt="" loading="lazy" />
+    </div>
+    <script>
+      window.onload = function () {
+        var elements = document.querySelectorAll("img");
+        Intense(elements);
+      };
+    </script>
+  </body>
+</html>
