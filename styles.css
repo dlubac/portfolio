@@ -78,6 +78,10 @@ h2 a {
   padding-top: 3px;
 }
 
+.spacer {
+  height: 50px;
+}
+
 /* Homepage */
 .home-flex-container {
   display: flex;
