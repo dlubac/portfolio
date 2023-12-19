@@ -130,8 +130,10 @@ footer a {
 
 .gallery-container p {
   position: relative;
+  display: block;
   top: -30px;
   width: 100%;
+  font-size: 1em;
   text-align: center;
   color: rgba(0, 0, 0, 0);
   transition: 0.8s ease-in-out;
