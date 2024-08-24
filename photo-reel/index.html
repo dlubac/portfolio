@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Matt Dlubac Photography</title>
+	<meta name="description" content=Outdoor&#32;photography&#32;by&#32;Matt&#32;Dlubac />
+	<link rel="canonical" href="https://dlubac.com/" />
+	<link rel="stylesheet" href="../styles.css" />
+	<link rel="icon" href="https://dlubac.com/favicon.ico" />
+	<meta name="theme-color" content="#fafafa">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="photo-reel.js"></script>
+	<script src="../spotlight.bundle.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1><a href="../">Matt Dlubac Photography</a></h1>
+	</header>
+	<div
+			class="photo-reel spotlight-group"
+			data-animation="slide"
+			data-theme="white"
+			data-fullscreen="false"
+			data-control="page,close,prev,next"
+	>
+		<h2>Photo Reel</h2>
+		<div id="photo-reel-gallery"></div>
+	</div>
+	<footer>
+		<a href="mailto:contact@dlubac.com">Email</a>
+		<a href="https://instagram.com/dlubac/">Instagram</a>
+	</footer>
+</body>
+<script>
+	const reel = document.getElementById("photo-reel-gallery");
+    for (const image of images) {
+        const a = document.createElement("a");
+        a.setAttribute("class", "spotlight");
+        a.setAttribute("href", image.path)
+
+		const img = document.createElement("img");
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("src", image.thumbnail);
+        img.setAttribute("width", image.width);
+        img.setAttribute("height", image.height);
+
+        a.appendChild(img)
+        reel.appendChild(a);
+	}
+</script>
