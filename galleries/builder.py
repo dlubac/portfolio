@@ -20,7 +20,7 @@ def find_avif_files(directory):
     return avif_files
 
 # Example usage
-avif_files = find_avif_files('acadia')
+avif_files = find_avif_files('rocky-mountains')
 print(avif_files)
 
 for avif_file in avif_files:
