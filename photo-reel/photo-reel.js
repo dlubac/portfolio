@@ -1,4 +1,40 @@
 const images = [
+    // {
+    //     "path": "",
+    //     "thumbnail": "",
+    //     "height": "",
+    //     "width": ""
+    // },
+    {
+        "path": "_7R53655-Enhanced-NR.avif",
+        "thumbnail": "_7R53655-Enhanced-NR_thumb.avif",
+        "height": "219px",
+        "width": "350px"
+    },
+    {
+        "path": "_7R53717-Enhanced-NR.avif",
+        "thumbnail": "_7R53717-Enhanced-NR_thumb.avif",
+        "height": "525px",
+        "width": "350px"
+    },
+    {
+        "path": "_7R53783-Enhanced-NR.avif",
+        "thumbnail": "_7R53783-Enhanced-NR_thumb.avif",
+        "height": "219px",
+        "width": "350px"
+    },
+    {
+        "path": "_7R54014-Enhanced-NR.avif",
+        "thumbnail": "_7R54014-Enhanced-NR_thumb.avif",
+        "height": "490px",
+        "width": "350px"
+    },
+    {
+        "path": "_7R54045-Enhanced-NR.avif",
+        "thumbnail": "_7R54045-Enhanced-NR_thumb.avif",
+        "height": "197px",
+        "width": "350px"
+    },
     {
         "path": "_7R53080-Enhanced-NR.avif",
         "thumbnail": "_7R53080-Enhanced-NR_thumb.avif",
