@@ -230,8 +230,8 @@ footer a {
 
     .photo-reel-homepage-grid img,
     .photo-reel-homepage-more {
-        width: 180px;
-        height: 180px;
+        width: 225px;
+        height: 225px;
     }
 
     #photo-reel-gallery {
@@ -250,7 +250,7 @@ footer a {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
     .photo-reel-homepage-grid {
         grid-template-columns: 1fr;
     }
