@@ -10,17 +10,20 @@ const images = [
         "thumbnail": "_7R54292-Enhanced-NR_thumb.avif",
         "height": "525px",
         "width": "350px"
-    },    {
+    },
+    {
         "path": "_7R54307-Enhanced-NR.avif",
         "thumbnail": "_7R54307-Enhanced-NR_thumb.avif",
         "height": "525px",
         "width": "350px"
-    },    {
+    },
+    {
         "path": "_7R54337-Enhanced-NR.avif",
         "thumbnail": "_7R54337-Enhanced-NR_thumb.avif",
         "height": "525px",
         "width": "350px"
-    },    {
+    },
+    {
         "path": "_7R54347-Enhanced-NR.avif",
         "thumbnail": "_7R54347-Enhanced-NR_thumb.avif",
         "height": "525px",
