@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "IA Writer Duo";
-	src: url("iAWriterDuoS-Regular.woff2") format("woff2");
+	src: url("fonts/iAWriterDuoS-Regular.woff2") format("woff2");
 }
 
 :root {
@@ -180,11 +180,12 @@ footer a {
 }
 
 .posts-grid a img {
-	width: 352px;
-	height: 440px;
+	width: 350px;
+	height: 350px;
 	border-radius: 0px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	transition: box-shadow 0.2s ease-in-out;
+	object-fit: cover;
 }
 
 .posts-grid a:hover img {
@@ -194,7 +195,7 @@ footer a {
 .posts-grid a .post-date {
 	font-size: 0.9em;
 	color: var(--nord3);
-	margin-top: 3px;
+
 }
 
 .post-content {
@@ -238,6 +239,7 @@ footer a {
 .photo-gallery {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding-bottom: 15px;
 }
 
 .photo-gallery h2 {
@@ -247,27 +249,22 @@ footer a {
 }
 
 .photo-gallery-images {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	justify-items: center;
+	margin: 0 15px;
+	column-count: 3;
+	column-gap: 10px;
 }
 
 .photo-gallery-images a {
-	padding-bottom: 25px;
+	display: block;
+	break-inside: avoid;
+	margin-bottom: 10px;
 }
 
 .photo-gallery-images a img {
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	transition: box-shadow 0.2s ease-in-out;
-}
-
-.photo-gallery-images a img:hover {
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.photo-gallery-images a:hover {
-	cursor: crosshair;
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+	display: block;
 }
 
 /* Media Queries */
@@ -279,6 +276,30 @@ footer a {
 	.gallery-grid,
 	.posts-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.posts-grid a img {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.posts-grid a img {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.gallery-grid,
+	.posts-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.posts-grid a img {
+		width: 350px;
+		height: 350px;
 	}
 
 	.photo-reel-homepage-grid {
@@ -296,12 +317,27 @@ footer a {
 	#photo-reel-gallery {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.photo-gallery-images {
+		column-count: 2;
+	}
 }
 
 @media (max-width: 734px) {
 	.gallery-grid,
 	.posts-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.posts-grid a img {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		aspect-ratio: 1 / 1;
+	}
+
+	.photo-gallery-images {
+		column-count: 1;
 	}
 
 	#photo-reel-gallery {

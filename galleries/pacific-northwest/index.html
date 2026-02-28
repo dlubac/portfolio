@@ -1,72 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<title>Matt Dlubac Photography</title>
-	<meta name="description" content="Outdoor&amp;#32;photography&amp;#32;by&amp;#32;Matt&amp;#32;Dlubac" />
+	<title>Matt Dlubac</title>
+	<meta name="description" content="Photography&amp;#32;by&amp;#32;Matt&amp;#32;Dlubac" />
 	<link rel="canonical" href="https://dlubac.com/galleries/Pacific%20Northwest/" />
 	<link rel="stylesheet" href="../../styles.css" />
+	<link rel="stylesheet" href="../../lightgallery.min.css" />
 	<link rel="icon" href="https://dlubac.com/favicon.ico" />
-	<meta name="theme-color" content="#fafafa">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="../../spotlight.bundle.js"></script>
+	<meta name="theme-color" content="#fafafa" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
 <header>
-	<h1><a href="../../">Matt Dlubac Photography</a></h1>
+	<h1><a href="../../">Matt Dlubac</a></h1>
+	<nav>
+		<a href="/archive">Archive</a>
+		<a href="https://instagram.com/dlubac">Instagram</a>
+	</nav>
 </header>
-<div class="photo-gallery spotlight-group" data-animation="slide" data-theme="white" data-fullscreen="false"
-	 data-control="page,close,prev,next">
+<div class="photo-gallery">
 	<h2>Pacific Northwest</h2>
-	<div class="photo-gallery-images">
+	<div id="lightgallery" class="photo-gallery-images">
 		
-		<a class="spotlight" href="_7R52271-Enhanced-NR.avif" data-description="">
-			<picture>
-				<source srcset="_7R52271-Enhanced-NR_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52271-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52271-Enhanced-NR.avif">
+			<img src="_7R52271-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
-		<a class="spotlight" href="_7R52273-Enhanced-NR.avif" data-description="">
-			<picture>
-				<source srcset="_7R52273-Enhanced-NR_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52273-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52273-Enhanced-NR.avif">
+			<img src="_7R52273-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
-		<a class="spotlight" href="_7R52282-Enhanced-NR.avif" data-description="">
-			<picture>
-				<source srcset="_7R52282-Enhanced-NR_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52282-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52282-Enhanced-NR.avif">
+			<img src="_7R52282-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
-		<a class="spotlight" href="_7R52323.avif" data-description="">
-			<picture>
-				<source srcset="_7R52323_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52323_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52323.avif">
+			<img src="_7R52323_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
-		<a class="spotlight" href="_7R52344-Enhanced-NR.avif" data-description="">
-			<picture>
-				<source srcset="_7R52344-Enhanced-NR_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52344-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52344-Enhanced-NR.avif">
+			<img src="_7R52344-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
-		<a class="spotlight" href="_7R52354-Enhanced-NR.avif" data-description="">
-			<picture>
-				<source srcset="_7R52354-Enhanced-NR_thumb_s.avif" media="(max-width: 775px)">
-				<img src="_7R52354-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
-			</picture>
+		<a href="_7R52354-Enhanced-NR.avif">
+			<img src="_7R52354-Enhanced-NR_thumb.avif" loading="lazy" alt="" />
 		</a>
 		
 	</div>
 </div>
-<footer>
-	<a href="mailto:contact@dlubac.com">Email</a>
-	<a href="https://instagram.com/dlubac/">Instagram</a>
-</footer>
+
+<script src="../../lightgallery.min.js"></script>
+<script>
+	lightGallery(document.getElementById('lightgallery'), {
+		selector: 'a',
+		speed: 500,
+		download: false,
+		counter: false,
+		loop: true,
+		zoom: false,
+		thumbnail: false,
+		fullScreen: true,
+		hideBarsDelay: 1000,
+		showBarsAfter: 2000
+	});
+</script>
 </body>
+</html>
